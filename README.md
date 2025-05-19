@@ -30,11 +30,15 @@ python semantic_desdf.py
 ```
 Place dataset under the data folder:
 ```
-├── f3loc
+├── AGSIFL
 │   ├── data
 │       ├── Gibson Floorplan Localization Dataset
 │           ├── README.md
 │           ├── gibson_f
+│               ├── Spencerville
+│                   ├──door_mask
+│                   ├──furniture_mask
+│                   ├── ... 
 │               ├── ...
 │           ├── gibson_g
 │               ├── ...
@@ -42,4 +46,22 @@ Place dataset under the data folder:
 │               ├── ...
 │           ├── desdf
 │               ├── ...
+│           ├── semantic_desdf
+│               ├── ...
+```
+
+## Usage
+### Evaluate the Single-Frame Localization
+```
+python eval_observation.py --dataset <dataset>
+```
+
+### Evaluate the Sequential Localization
+```
+python eval_filtering.py --traj_len <traj-len> --evol_path ./visualization
+```
+### Train mlp
+You need to modify the checkpoint's saving path according to your needs.
+```
+python train_mlp.py --dataset <dataset>
 ```
