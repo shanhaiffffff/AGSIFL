@@ -65,3 +65,7 @@ You need to modify the checkpoint's saving path according to your needs.
 ```
 python train_mlp.py --dataset <dataset>
 ```
+
+## Acknowledgement
+
+We thank the authors of [F<sup>3</sup>Loc](https://github.com/felix-ch/f3loc) and [OneFormer](https://github.com/SHI-Labs/OneFormer) for releasing their helpful codebases.
