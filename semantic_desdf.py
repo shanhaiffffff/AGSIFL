@@ -106,7 +106,7 @@ if __name__ == "__main__":
 
 
     semantic_map_path = os.path.join(
-        "/home/zlab/pengshun/f3loc-main/data/Gibson Floorplan Localization Dataset/gibson_f/Woonsocket","semantic_map.png")
+        "/home/zlab/pengshun/AGSIFL-main/data/Gibson Floorplan Localization Dataset/gibson_f/Woonsocket","semantic_map.png")
 
     semantic_mask = extract_semantic_mask(semantic_map_path)
     occ = cv2.imread(semantic_map_path)[:, :, 0]
@@ -141,6 +141,6 @@ if __name__ == "__main__":
         "desdf": semantic_desdf
     }
 
-    save_path = "/home/zlab/pengshun/f3loc-main/data/Gibson Floorplan Localization Dataset/semantic_desdf/Woonsocket/semantic_desdf.npy"
+    save_path = "/home/zlab/pengshun/AGSIFL-main/data/Gibson Floorplan Localization Dataset/semantic_desdf/Woonsocket/semantic_desdf.npy"
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     np.save(save_path, desdf)
