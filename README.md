@@ -20,8 +20,6 @@ python demo/demo.py --config-file configs/ade20k/swin/oneformer_swin_large_bs16_
   --task $task \
   --opts MODEL.WEIGHTS checkpoint/896x896_250_16_swin_l_oneformer_ade20k_160k.pth
 ```
-You can download the semantic_floorplan data from [here](https://pan.baidu.com/s/1QOUc_Z_cs9pWpQqyHPewUQ?pwd=f5iq).\
-Extracted code: f5iq.
 
 You can use the following command to generate semantic_DESDF for floorplans.You need to modify the relevant file paths according to your needs.
 
