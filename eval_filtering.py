@@ -338,7 +338,7 @@ def evaluate_filtering():
             flatten_posterior = posterior_2d_np.flatten()
             kurt = kurtosis(flatten_posterior)
 
-            if high_prob_ratio < 0.001 and mean_diff > 0.002 and kurt > 100:
+            if high_prob_ratio < 0.01 and mean_diff > 0.2 and kurt > 10:
                 alpha = 1
 
             else:
